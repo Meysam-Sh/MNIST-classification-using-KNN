@@ -51,7 +51,7 @@ def SVM(X_train,Y_train):
     model.fit(X_train,Y_train)
     # computing the average accuracy of each fold
     test_accuracy = cross_val_score(model, X_train, Y_train, cv=5, scoring='accuracy')
-    print ('Mean of accuracy is =',round(mean(test_accuracy),2))
+    print ('Mean of accuracy:',round(mean(test_accuracy),2))
     end  = time.time()
     print('elapsed time =',round(end-start,2))
     print('*'*20)
