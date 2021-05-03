@@ -4,7 +4,7 @@ import tensorflow as tf
 import time
 from sklearn.model_selection import cross_val_score
 from statistics import mean
-from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
 
 # load MNIST dataset 
 def load_date():
