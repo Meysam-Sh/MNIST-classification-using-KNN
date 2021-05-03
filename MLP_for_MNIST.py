@@ -4,7 +4,8 @@ import tensorflow as tf
 import time
 from sklearn.model_selection import cross_val_score
 from statistics import mean
-from sklearn.svm import SVC
+from sklearn.neural_network import MLPClassifier 
+
 
 # load MNIST dataset 
 def load_date():
